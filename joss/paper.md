@@ -55,7 +55,7 @@ Current computational challenges in earthquake simulation include: (1) handling 
 - compiled interfaces to `MFront` for the assembly of nonlinear constitutive behaviours;
 - `MED`-based mesh and post-processing interfaces, including data transfer between earthquake and structural simulations;
 - dedicated constitutive models and special bounday conditions for soil mechanics;
-- eigensolver components used in phase-field fracture-mechanics formulations; and
+- eigensolver components used in phase-field fracture-mechanics formulations.
 
 Therefore, `PSD` should be understood as a complete solver stack: it defines the governing formulations, assembles the corresponding finite-element problems, integrates specialised material models and boundary conditions, manages distributed meshes, invokes the required numerical libraries, and controls the simulation workflow. In this stack, `FreeFEM` provides the general finite-element language and discretization kernel, while the solver functionality is provided by the combination of generated code, `PSD` plugins, physics modules, and execution tools. This design enables computational efficiency while preserving flexibility for diverse applications across the available physics modules. 
 
